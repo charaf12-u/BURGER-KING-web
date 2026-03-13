@@ -3,146 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Burger King - Le goût avant tout</title>
+    <title>Burger King - Premium Flame-Grilled Burgers</title>
+    <!-- Removed Bootstrap to avoid conflicts -->
     <link rel="stylesheet" href="hum.css">
-    <link rel="stylesheet" href="bootstrap.css">
     <!-- Google Fonts for premium look -->
-    <link href="https://fonts.googleapis.com/css2?family=Flame&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header class="flex">
-        <div class="flex">
+        <div class="logo-container">
             <img src="images/logo.png" alt="Burger King Logo" class="burger-king">
-            <img src="images/menu-icon.png" alt="Menu" id="menu-img">
         </div>
-        <div class="flex menu-navbar">
-            <nav>
-                <ol class="flex nav">
-                    <li class="nav-item"><a class="nav-link" href="#">Notre Carte</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Le Coin Famille</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Recrutement</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Burger King® App</a></li>
+        <div class="header-right flex">
+            <nav class="main-nav">
+                <ol class="flex nav-list">
+                    <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Locations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Offers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Delivery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
                 </ol>
             </nav>
             <div class="flex header-actions">
-                <img src="images/join-icon.png" alt="Join" class="action-icon">
-                <img src="images/loyalty-program.png" alt="Loyalty" class="action-icon">
-                <button class="hdr-btn-red">CLICK & COLLECT</button>
+                <i class="fa-regular fa-user action-icon"></i>
+                <i class="fa-solid fa-cart-shopping action-icon"></i>
             </div>
+            <img src="images/menu-icon.png" alt="Menu" id="menu-img">
         </div>
     </header>
+    
     <main>
         <section class="section1">
             <div class="hero-content">
-                <button class="hero-btn">DÉCOUVREZ-LE !</button>
+                <h1 class="hero-title">Savor the<br>Flame.</h1>
+                <p class="hero-subtitle">Discover Our Premium<br>Burger Collection.</p>
+                <div class="hero-buttons flex">
+                    <button class="hero-btn-primary">ORDER NOW</button>
+                    <a href="#" class="hero-link">Explore Menu</a>
+                </div>
             </div>
         </section>
+
         <section class="section2">
-            <h1>CHAUD BOUILLANT</h1>
-            <p>Découvrez les actualités Burger King</p>
+            <h2 class="section-title">🔥 CHAUD BOUILLANT - LES NOUVEAUTÉS 🔥</h2>
             <div class="flex news-grid">
-                <div class="news-item">
-                    <img src="images/dessert-icecream.png" alt="Desserts Glacés">
-                    <div class="news-info">
-                        <h5>DESSERTS GLACÉS</h5>
+                <article class="news-card">
+                    <div class="card-img-wrapper" style="background-color: #3d1b0d; padding: 20px; text-align: center;">
+                        <img src="images/king-nuggets.png" alt="Le Piquant Royal" class="card-img" style="max-height: 180px; width: auto; max-width: 100%; border-bottom: none;">
                     </div>
-                </div>
-                <div class="news-item">
-                    <img src="images/learn-more.png" alt="En savoir plus">
-                    <div class="news-info">
-                        <h5>EN SAVOIR PLUS</h5>
+                    <div class="card-content">
+                        <h3 class="card-title">NOUVEAU: Le Piquant Royal!<br>(Découvrez la saveur intense)</h3>
+                        <p class="card-meta">Date - <a href="#">Link</a></p>
+                        <p class="card-desc">NOUVEAU: Le Piquant Royal! (Découvrez la saveur intense) accompagné de piment.</p>
+                        <a href="#" class="btn-read-more">LIRE LA SUITE</a>
                     </div>
-                </div>
-                <div class="news-item">
-                    <img src="images/current-news.png" alt="En ce moment">
-                    <div class="news-info">
-                        <h5>EN CE MOMENT</h5>
+                </article>
+
+                <article class="news-card">
+                    <div class="card-img-wrapper" style="background-color: #3d1b0d; padding: 20px; text-align: center;">
+                        <img src="images/double-steakhouse.png" alt="Menu Family Chaud" class="card-img" style="max-height: 180px; width: auto; max-width: 100%; border-bottom: none;">
                     </div>
-                </div>
+                    <div class="card-content">
+                        <h3 class="card-title">MENU FAMILY CHAUD:<br>(Le Festin Grillé)</h3>
+                        <p class="card-meta">Date - <a href="#">Link</a></p>
+                        <p class="card-desc">Le menu family CHAUD: (Les oxalys du combo Grillé) fraient maintière chaude.</p>
+                        <a href="#" class="btn-read-more">LIRE LA SUITE</a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="card-img-wrapper" style="background-color: #3d1b0d; padding: 20px; text-align: center;">
+                        <img src="images/dessert-icecream.png" alt="Dessert Moment" class="card-img" style="max-height: 180px; width: auto; max-width: 100%; border-bottom: none;">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">DESSERT MOMENT:<br>(Nouveau Shake Chocolat Croquant)</h3>
+                        <p class="card-meta">Date - <a href="#">Link</a></p>
+                        <p class="card-desc">Dessert moment Chocolat Shake jouant des (Nouveau Shake Chocolat Croquant).</p>
+                        <a href="#" class="btn-read-more">LIRE LA SUITE</a>
+                    </div>
+                </article>
             </div>
         </section>
-        <section class="section3 flex perks-section">
-            <div class="perk-item flex">
-                <img src="images/click-collect.png" alt="Click & Collect" class="img-1">
-                <button class="btn-rejounder">REJOINDRE</button>
+
+        <section class="section-offers">
+            <h2 class="offers-title">OFFRES EXCLUSIVES EN LIGNE</h2>
+            <div class="flex offers-grid">
+                <article class="offer-card flex">
+                    <div class="offer-left flex">
+                        <div class="offer-icon-wrapper">
+                            <img src="images/logo.png" alt="BK App" class="offer-icon">
+                        </div>
+                        <div class="offer-info">
+                            <h3>Burger King App</h3>
+                            <p>Burger King App to rece sur your application.</p>
+                        </div>
+                    </div>
+                    <button class="btn-offer">OFFRER</button>
+                </article>
+                <article class="offer-card flex">
+                    <div class="offer-left flex">
+                        <div class="offer-info">
+                            <h3>Deals</h3>
+                            <p>Deals viens d'immersion cpape de votre promotie.</p>
+                        </div>
+                    </div>
+                    <button class="btn-offer">OFFRES</button>
+                </article>
             </div>
-            <div class="perk-item">
-                <img src="images/benefits-banner.png" alt="Avantages">
-            </div>
-            <div class="perk-item flex">
-                <img src="images/loyalty-program.png" alt="Programme Fidélité">
-                <button class="btn-voir">VOIR TOUS LES AVANTAGES</button>
-            </div>
-        </section>
-        <section class="section4">
-            <h2>UNE PETITE OU GROSSE FAIM ?</h2>
-            <article class="flex burger-grid">
-                <div class="burger-item flex">
-                    <h5>KING NUGGETS</h5>
-                    <img src="images/king-nuggets.png" alt="King Nuggets">
-                </div>
-                <div class="burger-item flex">
-                    <h5>KING FUSION LION</h5>
-                    <img src="images/king-fusion-lion.png" alt="King Fusion Lion">
-                </div>
-                <div class="burger-item flex">
-                    <h5>CHICKEN LOUISIANE STEAKHOUSE</h5>
-                    <img src="images/chicken-louisiane.png" alt="Chicken Louisiane Steakhouse">
-                </div>
-                <div class="burger-item flex">
-                    <h5>DOUBLE STEAKHOUSE</h5>
-                    <img src="images/double-steakhouse.png" alt="Double Steakhouse">
-                </div>
-            </article>
         </section>
     </main>
+
     <footer>
-        <p>OUI, NOUS AIMONS NOUS SUIVRE !</p>
-        <div class="flex social-links">
-            <a href="#"><img src="images/facebook.png" alt="Facebook" class="fac-icon"></a>
-            <a href="#"><img src="images/whatsapp.png" alt="WhatsApp" class="wtp-icon"></a>
-            <a href="#"><img src="images/instagram.png" alt="Instagram" class="insta-icon"></a>
+        <div class="footer-container flex">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Burger King Logo">
+            </div>
+            
+            <div class="footer-nav flex">
+                <div class="footer-column">
+                    <h5>Sitemap</h5>
+                    <ul>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">A propos</a></li>
+                        <li><a href="#">Aide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h5>Légal</h5>
+                    <ul>
+                        <li><a href="#">Légal</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Profile</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-social">
+                <h5>Social Media</h5>
+                <div class="social-icons flex">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+            </div>
+
+            <div class="footer-newsletter">
+                <h5>Newsletter</h5>
+                <div class="newsletter-input flex">
+                    <input type="email" placeholder="Signup to newsletter">
+                    <button type="submit"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
         </div>
-        <p>KING DANS VOTRE POCHE</p>
-        <div class="flex store-links">
-            <img src="images/app-store.png" alt="App Store" class="app-img">
-            <img class="play-img" src="images/play-store.png" alt="Play Store">
+        <div class="footer-bottom">
+            <p>Copyright © 2024 Burger King</p>
         </div>
-        <hr>
-        <article class="flex footer-nav">
-            <div class="footer-column flex">
-                <h5>PRODUITS</h5>
-                <div class="footer-links">
-                    <p>Catalogue Produits</p>
-                    <p>Nos burgers</p>
-                    <p>Nos menus</p>
-                </div>
-            </div>
-            <div class="footer-column flex">
-                <h5>FAMILLE</h5>
-                <div class="footer-links">
-                    <p>Calendrier</p>
-                    <p>Anniversaire</p>
-                    <p>Menu Enfant</p>
-                </div>
-            </div>
-            <div class="footer-column flex">
-                <h5>SERVICES CONNECTÉS</h5>
-                <div class="footer-links">
-                    <p>Click & Collect</p>
-                    <p>Livraison</p>
-                    <p>Fidélité</p>
-                </div>
-            </div>
-            <div class="footer-column flex">
-                <h5>INFORMATIONS LÉGALES</h5>
-                <div class="footer-links">
-                    <p>Mentions Légales</p>
-                    <p>CGV</p>
-                    <p>Confidentialité</p>
-                </div>
-            </div>
-        </article>
     </footer>
 </body>
 </html>
+

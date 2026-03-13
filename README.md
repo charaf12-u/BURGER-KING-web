@@ -1,7 +1,3 @@
-# 🍔 Burger King - Premium Web Redesign
-
-![Burger King Website Screenshot](images/screenshot.png)
-
 # Burger King Redesign Project 🍔👑
 
 ![Burger King Landing Page Preview](images/screenshot.png)
